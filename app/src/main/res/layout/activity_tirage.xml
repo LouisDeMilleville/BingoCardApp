@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TirageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tirage_activity_number_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="00"
+            android:textStyle="bold"
+            android:textSize="80dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/tirage_activity_saisie_verif"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:hint="Numéro"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"/>
+            <Button
+                android:id="@+id/tirage_activity_bouton_verif"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Vérifier"
+                android:backgroundTint="@color/grey"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tirage_activity_display_verif"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Saisissez un nombre pour le vérifier"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/tirage_activity_bouton_gen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="GÉNÉRER UN NOMBRE"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:backgroundTint="@color/grey"
+            android:layout_margin="5dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
